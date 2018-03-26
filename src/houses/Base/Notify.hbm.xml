@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Notify">
+  <id name="notifyID">
+  	<generator class="native"/>
+  </id>
+  <property name="notify_content"/>
+  <property name="notify_date"/>
+  <property name="notify_title"/>
+  <property name="notify_uper"/>
+  </class>
+</hibernate-mapping>

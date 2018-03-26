@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Admin">
+  <id name="adminID">
+  	<generator class="foreign">
+  		<param name="property">admin_account</param>
+  	</generator>
+  </id>
+  <property name="admin_name"/>
+  <property name="admin_sex"/>
+  <property name="admin_age"/>
+  <property name="admin_tel"/>
+  <property name="admin_phone"/>
+  <property name="admin_addr"/>
+  <property name="admin_memo"/>
+  <one-to-one name="admin_account" constrained="true"/>
+  </class>
+</hibernate-mapping>

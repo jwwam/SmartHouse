@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Homes">
+  <id name="homesID">
+  	<generator class="native"/>
+  </id>
+  <property name="homes_number"/>
+  <property name="homes_lou" />
+  <property name="homes_type"/>
+  <property name="homes_area"/>
+  <property name="homes_sell"/>
+  <property name="homes_danyuan"/>
+  <property name="homes_louceng"/>
+  <property name="homes_chaoxiang"/>
+  <property name="homes_memo"/>
+  <property name="homes_yezhu"/>
+  </class>
+</hibernate-mapping>

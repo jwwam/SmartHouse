@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Xuncha">
+  <id name="xunchaID">
+  	<generator class="native"/>
+  </id>
+  <property name="xuncha_person"/>
+  <property name="xuncha_type"/>
+  <property name="xuncha_time"/>
+  <property name="xuncha_chuliren"/>
+  <property name="xuncha_dangshiren"/>
+  <property name="xuncha_result"/>
+  <property name="xuncha_memo"/>
+  </class>
+</hibernate-mapping>

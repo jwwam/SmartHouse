@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Custom_account">
+  <id name="custom_accountID">
+  	<generator class="native"/>
+  </id>
+  <property name="custom_username"/>
+  <property name="custom_password"/>
+  <property name="custom_yezhuID"/>
+  
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Maintain">
+  <id name="maintainID">
+  	<generator class="native"/>
+  </id>
+  <property name="maintain_thing"/>
+  <property name="maintain_status"/>
+  <property name="maintain_homesnumber"/>
+  <property name="maintain_sdate"/>
+  <property name="maintain_rdate"/>
+  <property name="maintain_tcost"/>
+  <property name="maintain_scost"/>
+  <property name="maintainer"/>
+  <property name="maintain_smemo"/>
+  <property name="maintain_rmemo"/>
+  </class>
+</hibernate-mapping>

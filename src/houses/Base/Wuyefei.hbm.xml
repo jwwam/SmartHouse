@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Wuyefei">
+  <id name="wuyefeiID">
+  	<generator class="native"/>
+  </id>
+  <property name="wuyefei_yezhu"/>
+  <property name="wuyefei_homes_number"/>
+  <property name="wuyefei_danjia"/>
+  <property name="wuyefei_status"/>
+  <property name="wuyefei_year"/>
+  <property name="wuyefei_month"/>
+  <property name="wuyefei_money"/>
+  <property name="wuyefei_date"/>
+  <property name="wuyefei_uper"/>
+  <property name="wuyefei_memo"/>
+  </class>
+</hibernate-mapping>

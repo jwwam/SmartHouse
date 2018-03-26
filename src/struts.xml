@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<include file="struts-default.xml"></include>
+<package name="houses" extends="struts-default">
+
+<action name="createDatabase" class="houses.Action.CreateDatabase" method="Create">
+</action>
+
+<action name="checkLogin" class="houses.Action.Login" method="checkLogin">
+<result name="admin" >/jsp/body/admin.jsp</result>
+<result name="custom">/jsp/body/custom.jsp</result>
+<result name="error">/jsp/body/error.jsp</result>
+</action>
+
+
+<action name="searchAdmin" class="houses.Action.SearchAdmin" method="searchInfo">
+<result name="success" type="redirect">/jsp/area_content/grandchild13Id.jsp</result>
+</action>
+
+<action name="listNotify" class="houses.Action.NotifyAction" method="List_notify">
+<result name ="success" >/jsp/area_content/grandchild14Id.jsp</result>
+</action>
+
+<action name="modify_notify" class="houses.Action.NotifyAction" method="modify_notify">
+<result name ="success">/jsp/area_content/updataNotify.jsp</result>
+</action>
+
+<action name="modifyCars" class="houses.Action.CarsAction" method="modifyCars">
+<result name ="success">/jsp/area_content/updataCars.jsp</result>
+</action>
+
+<action name="listMaintain" class="houses.Action.MaintainAction" method="List_maintain">
+<result name ="success" >/jsp/area_content/grandchild42Id.jsp</result>
+</action>
+
+<action name="detailMaintain" class="houses.Action.MaintainAction" method="detail_maintain">
+<result name ="success" >/jsp/area_content/detailMaintain.jsp</result>
+</action>
+
+<action name="unMaintain" class="houses.Action.MaintainAction" method="un_maintain">
+<result name ="success" >/jsp/area_content/unMaintain.jsp</result>
+</action>
+
+<action name="goMaintain" class="houses.Action.MaintainAction" method="go_maintain">
+<result name ="success" >/jsp/area_content/goMaintain.jsp</result>
+</action>
+
+<action name="listPersonnel" class="houses.Action.PersonnelAction" method="List_personnel">
+<result name ="success" >/jsp/area_content/grandchild32Id.jsp</result>
+</action>
+
+<action name="detailPersonnel" class="houses.Action.PersonnelAction" method="detail_personnel">
+<result name ="success" >/jsp/area_content/detailPersonnel.jsp</result>
+</action>
+
+<action name="searchPersonnel" class="houses.Action.PersonnelAction" method="search_personnel">
+<result name ="success" >/jsp/area_content/searchPersonel_result.jsp</result>
+</action>
+
+<action name="searchformodifyPersonnel" class="houses.Action.PersonnelAction" method="searchformodify_personnel">
+<result name ="success" >/jsp/area_content/modifyPersonnel.jsp</result>
+</action>
+
+<action name="initXunchaData" class="houses.Action.XunchaAction" method="initData">
+<result name="success">/jsp/area_content/addXuncha.jsp</result>
+</action>
+
+<action name="listXuncha" class="houses.Action.XunchaAction" method="list_xuncha">
+<result name ="success" >/jsp/area_content/grandchild51Id.jsp</result>
+</action>
+
+<action name="detailXuncha" class="houses.Action.XunchaAction" method="detail_xuncha">
+<result name ="success" >/jsp/area_content/detailXuncha.jsp</result>
+</action>
+
+<action name="searchformodifyXuncha" class="houses.Action.XunchaAction" method="detail_xuncha">
+<result name ="success" >/jsp/area_content/modifyXuncha.jsp</result>
+</action>
+
+<action name="listLvhua" class="houses.Action.LvhuaAction" method="list_lvhua">
+<result name ="success" >/jsp/area_content/grandchild52Id.jsp</result>
+</action>
+
+<action name="detailLvhua" class="houses.Action.LvhuaAction" method="detail_lvhua">
+<result name ="success" >/jsp/area_content/detailLvhua.jsp</result>
+</action>
+
+<action name="listCars" class="houses.Action.CarsAction" method="listCars">
+<result name ="success" >/jsp/area_content/grandchild25Id.jsp</result>
+</action>
+
+<action name="listHomes" class="houses.Action.HomesAction" method="List_homes">
+<result name ="success" >/jsp/area_content/grandchild22Id.jsp</result>
+</action>
+
+<action name="detailHomes" class="houses.Action.HomesAction" method="detail_homes">
+<result name ="success" >/jsp/area_content/detailHomes.jsp</result>
+</action>
+
+<action name="listWuyefei" class="houses.Action.WuyefeiAction" method="list_wuyefei">
+<result name ="success" >/jsp/area_content/grandchild61Id.jsp</result>
+</action>
+
+<action name="listYezhu" class="houses.Action.YezhuAction" method="list_yezhu">
+<result name ="success" >/jsp/area_content/grandchild24Id.jsp</result>
+</action>
+
+<action name="detail_yezhu" class="houses.Action.YezhuAction" method="detail_yezhu">
+<result name ="success" >/jsp/area_content/detailYezhu.jsp</result>
+</action>
+
+<action name="modify_yezhu" class="houses.Action.YezhuAction" method="modify_yezhu">
+<result name ="success" >/jsp/area_content/modifyYezhu.jsp</result>
+</action>
+
+<action name="detail_wuyefei" class="houses.Action.WuyefeiAction" method="detail_wuyefei">
+<result name ="success" >/jsp/area_content/detailWuyefei.jsp</result>
+</action>
+
+<action name="yezhu_info" class="houses.Action.YezhuAction" method="yezhu_info">
+<result name ="success" >/jsp/yezhu_content/yezhuinfo.jsp</result>
+</action>
+
+<action name="new_notify" class="houses.Action.NotifyAction" method="new_notify">
+<result name ="success" >jsp/yezhu_content/yezhu_content.jsp</result>
+</action>
+
+<action name="new_wuyefei" class="houses.Action.WuyefeiAction" method="new_wuyefei">
+<result name ="success" >jsp/yezhu_content/yezhu_content.jsp</result>
+</action>
+
+<action name="search_yezhuinfo" class="houses.Action.YezhuAction" method="search_yezhuinfo">
+<result name ="success" >/jsp/yezhu_content/modifyYezhu.jsp</result>
+</action>
+
+<action name="yezhu_maitain" class="houses.Action.MaintainAction" method="yezhu_maitain">
+<result name ="success" >/jsp/yezhu_content/maintainlist.jsp</result>
+</action>
+
+</package>
+
+
+
+<package name="ajax" extends="json-default">
+
+<action name="updatapsd" class="houses.Action.UpdataPassword" method="updatapsd">
+<result type="json"/>
+</action>
+
+<action name="updaAdmin" class="houses.Action.UpdataAdmin" method="updataAdmin">
+<result type="json"/>
+</action>
+
+<action name="updataCars" class="houses.Action.CarsAction" method="updataCars">
+<result type="json"/>
+</action>
+
+<action name="addNotify" class="houses.Action.NotifyAction" method="Add">
+<result type="json"/>
+</action>
+
+<action name="updataNotify" class="houses.Action.NotifyAction" method="Updata_notify">
+<result type="json"/>
+</action>
+
+<action name="delNotify" class="houses.Action.NotifyAction" method="Del_notify">
+<result type="json"/>
+</action>
+
+<action name="addHomes" class="houses.Action.HomesAction" method="Add_homes">
+<result type="json"/>
+</action>
+
+<action name="savehomessearchinfo" class="houses.Action.HomesAction" method="savesearchinfo">
+<result type="json"/>
+</action>
+
+
+<action name="addMaintain" class="houses.Action.MaintainAction" method="add_maintain">
+<result type="json"/>
+</action>
+
+<action name="doMaintain" class="houses.Action.MaintainAction" method="do_maintain">
+<result type="json"/>
+</action>
+
+<action name="resultMaintain" class="houses.Action.MaintainAction" method="result_maintain">
+<result type="json"/>
+</action>
+
+<action name="addPersonnel" class="houses.Action.PersonnelAction" method="add_personnel">
+<result type="json"/>
+</action>
+
+<action name="modifyPersonnel" class="houses.Action.PersonnelAction" method="modify_personnel">
+<result type="json"/>
+</action>
+
+<action name="ruzhiPersonnel" class="houses.Action.PersonnelAction" method="ruzhi_personnel">
+<result type="json"/>
+</action>
+
+<action name="lizhiPersonnel" class="houses.Action.PersonnelAction" method="lizhi_personnel">
+<result type="json"/>
+</action>
+
+<action name="saveSearchinfo" class="houses.Action.PersonnelAction" method="savesearchinfo">
+<result type="json"/>
+</action>
+
+<action name="addXuncha" class="houses.Action.XunchaAction" method="add_xuncha">
+<result type="json"/>
+</action>
+
+<action name="modifyXuncha" class="houses.Action.XunchaAction" method="modify_xuncha">
+<result type="json"/>
+</action>
+
+<action name="deleteXuncha" class="houses.Action.XunchaAction" method="delete_xuncha">
+<result type="json"/>
+</action>
+
+<action name="addLvhua" class="houses.Action.LvhuaAction" method="add_lvhua">
+<result type="json"/>
+</action>
+
+<action name="deleteLvhua" class="houses.Action.LvhuaAction" method="delete_lvhua">
+<result type="json"/>
+</action>
+
+<action name="addCars" class="houses.Action.CarsAction" method="addCars">
+<result type="json"/>
+</action>
+
+<action name="deleteCars" class="houses.Action.CarsAction" method="deleteCars">
+<result type="json"/>
+</action>
+
+<action name="yanshouLvhua" class="houses.Action.LvhuaAction" method="yanshou_lvhua">
+<result type="json"/>
+</action>
+
+<action name="addYezhu" class="houses.Action.HomesAction" method="Add_yezhu">
+<result type="json"/>
+</action>
+
+<action name="deleteHomes" class="houses.Action.HomesAction" method="delete_homes">
+<result type="json"/>
+</action>
+
+<action name="save_yezhu_searchinfo" class="houses.Action.YezhuAction" method="save_yezhu_searchinfo">
+<result type="json"/>
+</action>
+
+<action name="delete_yezhu" class="houses.Action.YezhuAction" method="delete_yezhu">
+<result type="json"/>
+</action>
+
+<action name="submit_modify" class="houses.Action.YezhuAction" method="submit_modify">
+<result type="json"/>
+</action>
+
+<action name="add_custom_account" class="houses.Action.YezhuAction" method="add_custom_account">
+<result type="json"/>
+</action>
+
+<action name="shengcheng_wuyefei" class="houses.Action.WuyefeiAction" method="shengcheng_wuyefei">
+<result type="json"/>
+</action>
+
+<action name="shouqu_wuyefei" class="houses.Action.WuyefeiAction" method="shouqu_wuyefei">
+<result type="json"/>
+</action>
+
+<action name="modify_custom_psd" class="houses.Action.Custom_accountAction" method="modify_custom_psd">
+<result type="json"/>
+</action>
+
+</package>
+</struts>

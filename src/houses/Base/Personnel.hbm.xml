@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Personnel">
+  <id name="personnelID">
+  	<generator class="native"/>
+  </id>
+  <property name="personnel_name"/>
+  <property name="personnel_age"/>
+  <property name="personnel_sex"/>
+  <property name="personnel_idcard"/>
+  <property name="personnel_jiguan"/>
+  <property name="personnel_phone"/>
+  <property name="personnel_addr"/>
+  <property name="personnel_xueli"/>
+  <property name="personnel_gongling"/>
+  <property name="personnel_oldwork"/>
+  <property name="personnel_daozhidate"/>
+  <property name="personnel_lizhidate"/>
+  <property name="personnel_worktype"/>
+   <property name="personnel_daozhimemo"/>
+  <property name="personnel_lizhimemo"/>
+  <property name="personnel_status"/>
+  <property name="personnel_update"/>
+  
+  </class>
+</hibernate-mapping>

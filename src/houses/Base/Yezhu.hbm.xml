@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="houses.Base">
+  <class name="Yezhu">
+  <id name="yezhuID">
+  	<generator class="native"/>
+  </id>
+  <property name="yezhu_homesnumber"/>
+  <property name="yezhu_name"/>
+  <property name="yezhu_sex"/>
+  <property name="yezhu_age"/>
+  <property name="yezhu_tel"/>
+  <property name="yezhu_phone"/>
+  <property name="yezhu_IDC"/>
+  <property name="yezhu_member"/>
+  <property name="yezhu_date"/>
+  <property name="yezhu_memo"/>
+  <property name="yezhu_custom_account"/>
+  </class>
+</hibernate-mapping>
